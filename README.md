@@ -1,14 +1,26 @@
-# mcp-giantbomb
+# @pipeworx/giantbomb
 
-Giant Bomb MCP.
+[Giant Bomb](https://www.giantbomb.com/api/) MCP — extensive video-game catalog (games, characters, companies, platforms, releases, reviews). Free API key required.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform: `PLATFORM_GIANTBOMB_KEY`. BYO: `?_apiKey=…`.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | Search across all resources. |
+- `search(query, resources?, limit?, page?)` — search across all resources
+- `game(guid_or_id)` — single game record
+- `games(filter?, sort?, limit?, offset?)` — list/filter games
+- `character(guid_or_id)` — single character
+- `companies(filter?, limit?, offset?)` — companies
+- `releases(filter?, limit?, offset?)` — releases
+- `platforms(filter?, limit?, offset?)` — platforms
+
+## Data source
+
+`https://www.giantbomb.com/api/`
 
 ## Quick Start
 
@@ -24,7 +36,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -48,7 +60,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
