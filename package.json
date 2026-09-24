@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-giantbomb",
-  "version": "0.1.0",
-  "description": "Giant Bomb video-game catalog (free key)",
+  "version": "0.1.1",
+  "description": "Giant Bomb MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-giantbomb": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "giantbomb"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-giantbomb"
+    "url": "git+https://github.com/pipeworx-io/mcp-giantbomb.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-328fa273dab4550273bae42eefa0ece9b099bf09bf196a0393135c4d5ea66f29",
+    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
   }
 }

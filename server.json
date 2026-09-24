@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/giantbomb",
   "title": "Giantbomb",
-  "description": "Giant Bomb video-game catalog (free key)",
-  "version": "0.1.0",
+  "description": "Giant Bomb MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/giantbomb",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-giantbomb",
